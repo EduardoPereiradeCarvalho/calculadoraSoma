@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        let continuar = 'S';
+        let s = 0;
+
+    while(continuar === 'S'){
+        const n = Number(window.prompt('Digite o número: '));
+        s += n;
+        continuar = window.prompt('Deseja continuar[S/N]: ').toUpperCase();
+    }
+    window.alert('A soma dos valores é ' + s);
+    </script>
+    <button class="B" onclick="voltar()">VOLTAR</button>
+    <script>
+        function voltar(){
+            window.location.href = "calculadoraSoma.html";
+        }
+    </script>
+</body>
+</html>
